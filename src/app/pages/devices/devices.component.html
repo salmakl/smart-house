@@ -1,0 +1,22 @@
+
+
+<main>
+    <div class="new">
+        <button mat-fab class="plusButton" ><mat-icon class="plusIcon">add_circle</mat-icon></button>
+    </div>
+  
+       <div class="devices" [ngStyle]="{'background': device.status? '#caebd4':'#edd0c8'}" *ngFor="let device of devices"> 
+        <div class="cont" [ngSwitch]=" device.status ">
+        <button mat-fab  *ngSwitchCase="1"  (click)="statusDevice(device)" ><mat-icon class="matIcon">stop</mat-icon></button>   
+        <button mat-fab  *ngSwitchCase="0"  (click)="statusDevice(device)" ><mat-icon class="matIcon">play_arrow</mat-icon></button> 
+    
+              <p>Device :<b>{{device.device}} </b></p>
+              <p>Room :<b> {{device.room}} </b></p>
+              <p>Floor :<b>{{device.floor}} </b></p>
+              <p>Status :<b> {{device.status}} </b></p>
+          </div>
+          </div>
+
+</main>   
+
+  

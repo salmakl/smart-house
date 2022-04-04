@@ -1,0 +1,27 @@
+main{
+margin: 20px 0 0 20px;
+}
+.column{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.card{
+    display: flex;
+    flex-direction: column; 
+    width: 200px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: #7a8186;
+    p{
+        font-size: 15px;
+        color: #dbe7f1;
+    }
+    h2{
+        font-size: 20px;
+        color: #FFF;
+    }
+}
