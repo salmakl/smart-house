@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>New device</h1> 
+    
+        <mat-form-field  appearance="outline">
+          
+          <input matInput placeholder="The device" [(ngModel)]="device.device">
+          
+        </mat-form-field>
+   
+
+    <mat-form-field class="" appearance="outline">
+        <input matInput  type="number" placeholder="Floor" [(ngModel)]="device.floor">
+      </mat-form-field>
+
+      
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="The room" [(ngModel)]="device.room">
+          
+        </mat-form-field>
+    
+    
+  <button mat-flat-button (click)="addDevice()" >Add</button>
+
+
+      
+</div>

@@ -21,6 +21,7 @@ export class DeviceService {
   {
     return this.http.post<Device>(this.apiUrl, device);
   }
+  
   statusDevice(id:any, status:any)
   {
     return this.http.patch(`${this.apiUrl}/${id}`,{status: !status} )

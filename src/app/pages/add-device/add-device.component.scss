@@ -1,0 +1,18 @@
+.container{
+    position: fixed;
+    top: 25%;
+    right: 35%;
+    background: rgb(226, 222, 222);
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+
+    input{
+        width: 400px;
+        height: 40px;
+        padding: 10px;
+    }
+  }

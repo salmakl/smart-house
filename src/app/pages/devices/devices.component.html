@@ -2,7 +2,7 @@
 
 <main>
     <div class="new">
-        <button mat-fab class="plusButton" ><mat-icon class="plusIcon">add_circle</mat-icon></button>
+        <button mat-fab class="plusButton" (click)="openDialog()" ><mat-icon class="plusIcon">add_circle</mat-icon></button>
     </div>
   
        <div class="devices" [ngStyle]="{'background': device.status? '#caebd4':'#edd0c8'}" *ngFor="let device of devices"> 
@@ -14,6 +14,9 @@
               <p>Room :<b> {{device.room}} </b></p>
               <p>Floor :<b>{{device.floor}} </b></p>
               <p>Status :<b> {{device.status}} </b></p>
+          </div>
+          <div>
+                <button mat-fab class="deleteButton" (click)="deleteDevice(device.id)"><mat-icon class="deleteIcon">delete</mat-icon></button>
           </div>
           </div>
 
